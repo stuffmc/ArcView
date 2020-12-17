@@ -49,7 +49,7 @@ struct ArcView: View {
     private let end: Double
     private let fullEnd: Double = 270
     private let filledSlice: Double
-    private let colors: [Color]  = [.red, .green, .blue]
+    private let colors: [Color] = [.red, .green, .blue]
     private let angularGradient: AngularGradient
     var width: CGFloat
 
