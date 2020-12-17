@@ -7,19 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CF3BA82258BD09400616F7D /* ArcViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3BA81258BD09400616F7D /* ArcViewApp.swift */; };
-		4CF3BA84258BD09400616F7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3BA83258BD09400616F7D /* ContentView.swift */; };
-		4CF3BA86258BD09500616F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF3BA85258BD09500616F7D /* Assets.xcassets */; };
-		4CF3BA89258BD09500616F7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF3BA88258BD09500616F7D /* Preview Assets.xcassets */; };
+		4CF3BA96258BD0EB00616F7D /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3BA94258BD0EB00616F7D /* ArcView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C31A8F8258BD56800C5DB27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4CF3BA7E258BD09400616F7D /* ArcView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CF3BA81258BD09400616F7D /* ArcViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcViewApp.swift; sourceTree = "<group>"; };
-		4CF3BA83258BD09400616F7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4CF3BA85258BD09500616F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CF3BA88258BD09500616F7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4CF3BA8A258BD09500616F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF3BA93258BD0EB00616F7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF3BA94258BD0EB00616F7D /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +31,9 @@
 		4CF3BA75258BD09400616F7D = {
 			isa = PBXGroup;
 			children = (
-				4CF3BA80258BD09400616F7D /* ArcView */,
+				4C31A8F8258BD56800C5DB27 /* README.md */,
+				4CF3BA94258BD0EB00616F7D /* ArcView.swift */,
+				4CF3BA93258BD0EB00616F7D /* Info.plist */,
 				4CF3BA7F258BD09400616F7D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,26 +44,6 @@
 				4CF3BA7E258BD09400616F7D /* ArcView.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4CF3BA80258BD09400616F7D /* ArcView */ = {
-			isa = PBXGroup;
-			children = (
-				4CF3BA81258BD09400616F7D /* ArcViewApp.swift */,
-				4CF3BA83258BD09400616F7D /* ContentView.swift */,
-				4CF3BA85258BD09500616F7D /* Assets.xcassets */,
-				4CF3BA8A258BD09500616F7D /* Info.plist */,
-				4CF3BA87258BD09500616F7D /* Preview Content */,
-			);
-			path = ArcView;
-			sourceTree = "<group>";
-		};
-		4CF3BA87258BD09500616F7D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				4CF3BA88258BD09500616F7D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +103,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF3BA89258BD09500616F7D /* Preview Assets.xcassets in Resources */,
-				4CF3BA86258BD09500616F7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +113,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF3BA84258BD09400616F7D /* ContentView.swift in Sources */,
-				4CF3BA82258BD09400616F7D /* ArcViewApp.swift in Sources */,
+				4CF3BA96258BD0EB00616F7D /* ArcView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,13 +239,10 @@
 		4CF3BA8E258BD09500616F7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ArcView/Preview Content\"";
 				DEVELOPMENT_TEAM = D5PCJAP39R;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ArcView/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,13 +258,10 @@
 		4CF3BA8F258BD09500616F7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ArcView/Preview Content\"";
 				DEVELOPMENT_TEAM = D5PCJAP39R;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ArcView/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
